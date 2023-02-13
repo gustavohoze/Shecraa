@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow-y: hidden; */
 }
 
 body {
@@ -6102,11 +6103,10 @@ body {
 
 .message {
   position: absolute;
-  right: 30%;
+  right: 20%;
   bottom: 50%;
-
   color: white;
-  font-family: "Josefin Slab", serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 27px;
   font-size: 3rem;
   text-align: center;
@@ -6134,15 +6134,21 @@ body {
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
-ul{
-  position: absolute;
+.sosmed{
+  /* position: absolute;
   right: 35%;
   bottom: 30%;
   display: inline-flex;
   gap: 25px;
-  text-align: center;
+  text-align: center; */
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  height: 100vh;
 }
-ul li{
+.sosmed li{
   position: relative;
   list-style: none;
   width: 60px;
@@ -6155,6 +6161,9 @@ ul li{
   box-shadow: 0 10px 25px rgba(23, 113, 84, 0.034);
   transition: 0.5s;
   text-align: left;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+  opacity: 0;
 }
 ul li:hover{
   width: 180px;
@@ -6222,3 +6231,410 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+
+.navbar{
+  /* border: 2px solid red; */
+  /* width: 98vw; */
+  color: #fff;
+  justify-content: space-around;
+  display:flex;
+  padding-top: 2em;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+  /* position: fixed; */
+  z-index: 9999;
+}
+li{
+  list-style-type: none;
+}
+.navbar li a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.aboutme{
+  width: auto;
+  height: 140vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #021027, #060f24, #090d20, #0b0c1d, #0c0b1a);
+}
+.aboutme img{
+  border-radius: 100%;
+  height: 15rem;
+  width: 15rem;
+  margin-top: 10%;
+  margin-left: 3%;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+.aboutme h2{
+  margin-top: 5%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  /* margin-left: 35%; */
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+.aboutme h3{
+  margin-top: 5%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  opacity: 0.8;
+  text-align: center;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+.academic{
+  /* padding-top: 5%;
+  width: 12em;
+  text-align: center; */
+  /* border: 2px solid red; */
+  /* text-align: right; */
+  /* display: flex; */
+  width: 90vw;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+table{
+  text-align: center;
+
+  width: 70em;
+  height: 15em;
+ 
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+  
+}
+hr{
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+br{
+  -webkit-animation: message-frames 1.5s ease 1.8s forwards;
+          animation: message-frames 1.5s ease 1.8s forwards;
+          opacity: 0;
+}
+table th{
+  font-size: 1.4em;
+  
+}
+table td{
+  font-size: 1.6em;
+  
+}
+table th a{
+  color: inherit;
+  text-decoration: none;
+}
+.td1{
+  opacity: 0.9;
+}
+.td2{
+  opacity: 0.8;
+}
+.td3{
+  opacity: 0.75;
+}
+
+.portofolio{
+  
+  height: 150vh;
+  width: auto;
+  background-image: linear-gradient(to bottom, #0c0b1a, #0e0c21, #0e0c28, #0f0c2f, #0f0c36);
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #db1bcb, 0 0 40px #db1bcb, 0 0 50px #db1bcb, 0 0 60px #db1bcb, 0 0 70px #db1bcb;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b51cd0, 0 0 40px #b51cd0, 0 0 50px #b51cd0, 0 0 60px #b51cd0, 0 0 70px #b51cd0, 0 0 80px #b51cd0;
+  }
+}
+.portofolio h2{
+  padding-top: 15%;
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.slider {
+  padding-top: 5%;
+  width: 100%;
+}
+.slider input {
+  display: none;
+}
+.myCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.myCarousel .item {
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #0A0220;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.myCarousel .item img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border: 13px solid #3B344D;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413B52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+#t-1:checked ~ .myCarousel label[for="t-3"],
+#t-2:checked ~ .myCarousel label[for="t-4"],
+#t-3:checked ~ .myCarousel label[for="t-5"],
+#t-4:checked ~ .myCarousel label[for="t-1"],
+#t-5:checked ~ .myCarousel label[for="t-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#t-1:checked ~ .myCarousel label[for="t-2"],
+#t-2:checked ~ .myCarousel label[for="t-3"],
+#t-3:checked ~ .myCarousel label[for="t-4"],
+#t-4:checked ~ .myCarousel label[for="t-5"],
+#t-5:checked ~ .myCarousel label[for="t-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#t-2:checked ~ .myCarousel label[for="t-1"],
+#t-3:checked ~ .myCarousel label[for="t-2"],
+#t-4:checked ~ .myCarousel label[for="t-3"],
+#t-5:checked ~ .myCarousel label[for="t-4"],
+#t-1:checked ~ .myCarousel label[for="t-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+#t-3:checked ~ .myCarousel label[for="t-1"],
+#t-4:checked ~ .myCarousel label[for="t-2"],
+#t-5:checked ~ .myCarousel label[for="t-3"],
+#t-2:checked ~ .myCarousel label[for="t-5"],
+#t-1:checked ~ .myCarousel label[for="t-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#t-1:checked ~ .myCarousel label[for="t-1"],
+#t-2:checked ~ .myCarousel label[for="t-2"],
+#t-3:checked ~ .myCarousel label[for="t-3"],
+#t-4:checked ~ .myCarousel label[for="t-4"],
+#t-5:checked ~ .myCarousel label[for="t-4"],
+#t-5:checked ~ .myCarousel label[for="t-5"] {
+  z-index: 4;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  /* align-items:flex-start; */
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #0f0c36, #0d0b2f, #0b0827, #080620, #040418);
+}
+.boxcontact{
+  width: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.formdiv h2{
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 1em;
+}
+.formdiv input, .formdiv textarea{
+  width: 20em;
+}
+textarea{
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #2A2A9D;
+  opacity: 0.5;
+  width: 20vw;
+  height: 5vh;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #111;
+}
+input{
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #2A2A9D;
+  opacity: 0.5;
+  width: 20vw;
+  height: 5vh;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #111;
+}
+button{
+  /* justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex; */
+  background-color: #2A2A9D;
+  opacity: 0.5;
+  border: 2px solid #111;
+  padding: 1em 2em;
+  color: white;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.form1{
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #111;
+}
+.form1:invalid{
+  border: 2px solid #e70707;
+  animation: invalid 0.3s 2;
+}
+
+@keyframes invalid {
+  25%{
+    translate: 6px 0;
+  }
+  50%{
+    translate: -6px 0;
+  }
+  75%{
+    translate: 6px 0;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .message{
+    font-size: 2em;
+  }
+
+  .nama h3{
+    font-size: 1em;
+    width: 100vw;
+    padding-top: 1em;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+  }
+  .academic{
+    /* border: 2px solid red; */
+    margin-left: 2em;
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+
+}
+
+@media screen and (max-width:500px) {
+  .message{
+    font-size: 1.5em;
+    /* border: 2px solid red; */
+    right: 10%;
+  }
+
+  .aboutme img{
+    width: 10em;
+    height: 10em;
+  }
+
+  .nama h2{
+    font-size: 1.5em;
+  }
+
+  .nama h3{
+    font-size: 0.8em;
+    width: 100vw;
+    padding-top: 1em;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+  }
+  .academic{
+    /* border: 2px solid red; */
+    margin-left: 2em;
+    margin: 0 auto;
+    width: 90vw;
+    font-size: 0.8em;
+  }
+
+  table{
+    font-size: 0.4em;
+  }
+}
